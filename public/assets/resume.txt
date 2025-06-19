@@ -1,0 +1,134 @@
+Artificial Intelligence Engineer
+anant241203@gmail.com
+linkedin.com/in/anant241203
+github.com/ANANT241203
+4453100291
+Philadelphia, Pennsylvania
+I enjoy building practical machine learning systems that solve clear problems and improve existing workflows.
+Currently, I’m developing tools and products that connect the ability of large language models with everyday platforms
+to make information easier to access and use.
+Work Experience
+Anant Aggarwal
+AI Engineer
+GPT Integrators | Atlanta, Georgia, United States
+-
+Architected comprehensive full-stack Agentic AI assistant using React/TypeScript, Node.js/Express,
+PostgreSQL/pgvector for semantic search, OpenAI RAG implementation, enterprise multi-platform OAuth integrations
+(Google Drive, Microsoft Teams, SharePoint), Docker containerization, and scalable modular microservices architecture
+achieving 50% cost optimization through intelligent batch processing.
+Integrated OpenAI GPT models to build RAG (Retrieval-Augmented Generation) chat system enabling natural
+language queries across synchronized documents with context-aware responses.
+Developed intelligent document processing pipeline supporting 10+ file formats (PDF, Word, PowerPoint, Excel,
+Google Docs) with automated content extraction and vector embedding generation.
+Implemented semantic search functionality using vector embeddings and pgvector, enabling AI-powered document
+discovery and content matching.
+Architected and developed a comprehensive document AI assistant web application using React 18/TypeScript
+frontend with Node.js/Express backend, featuring modular service architecture with 15+ specialized microservices.
+Implemented multi-platform integration system supporting Google Drive, Microsoft Teams, SharePoint, and Notion
+APIs with OAuth 2.0 authentication and secure credential management.
+Designed and built PostgreSQL database with pgvector extension for semantic search capabilities and implemented
+Drizzle ORM for type-safe database operations.
+Implemented Model Context Protocol (MCP) servers for enhanced AI tool integration and function calling
+capabilities.
+Containerized application using Docker with multi-service orchestration via Docker Compose for development,
+staging, and production environments.
+Designed modular service architecture breaking down monolithic services into focused, testable modules (reduced
+individual service complexity from 1,900+ lines to ~300 lines per module).
+Implemented intelligent batch processing for document embeddings achieving 50% cost reduction through
+optimized OpenAI API usage and smart real-time vs. batch processing decisions.
+Developed responsive React application using shadcn/ui component library, TailwindCSS, and TypeScript with
+modern state management via TanStack Query.
+Implemented end-to-end encryption for sensitive credentials and API tokens with secure key management and
+environment-based configuration.
+Designed comprehensive session management using PostgreSQL-backed sessions with Redis caching for highperformance
+user state management.
+Led cross-functional coordination between ML, backend, and frontend teams to architect unified system interfaces,
+ensuring seamless integration of AI pipelines, scalable microservices, and OAuth-based enterprise integrations
+across multiple platforms.
+May 2025 Present
+Core Skills
+Machine Learning Researcher
+The Research World (Threws)
+-
+Developed machine learning models that improved diagnostic accuracy from 78% to 94% in medical imaging
+applications, significantly enhancing early disease detection. Published research findings in SCOPUS-indexed journals,
+collaborating with experts to refine methodologies for large-scale medical data analysis.
+Published 7 peer-reviewed papers in Springer CCIS, SCOPUS-indexed journals, and Auerbach Publications on AI
+applications in medical diagnostics, sustainability optimization, and cyber-physical system security.
+Developed convolutional neural networks (CNNs) using TensorFlow and Keras for medical image classification (X-ray,
+MRI, peripheral blood smears), improving diagnostic accuracy from 78% to 94%.
+Engineered preprocessing pipelines using OpenCV and scikit-image for histogram equalization, noise reduction,
+contrast enhancement, and ROI extraction across 50,000+ patient images.
+Implemented hyperparameter optimization using Optuna to fine-tune model architectures (learning rate schedules,
+dropout rates, batch sizes) across GPU-accelerated multi-node training clusters.
+Integrated ensemble stacking of CNNs, SVMs, and Random Forest classifiers to stabilize predictions across diverse
+diagnostic categories and unbalanced class distributions.
+Applied advanced data augmentation (elastic deformation, rotation, scaling, translation) to increase model
+robustness for minority-class disease patterns.
+Designed scalable end-to-end ML pipelines using TensorFlow Extended (TFX) for preprocessing, training, validation,
+and deployment across large-scale datasets exceeding 100GB.
+Apr 2023 Apr 2024
+Data Scientist (Sales & Digital Media)
+Ultrafast Tools | India
+-
+Worked on data-driven strategies to enhance customer engagement and optimize digital marketing efforts. Developed
+predictive models that increased customer retention from 65% to 80% and reduced fraudulent transactions from
+10,000 cases per month to under 1,000, significantly improving financial security.
+Built customer churn prediction models using XGBoost, LightGBM, and CatBoost on 5M+ customer interaction
+records, improving retention from 65% to 80%.
+Developed real-time fraud detection algorithms using isolation forests, unsupervised clustering (DBSCAN), and
+supervised binary classifiers (Random Forest, Logistic Regression) to reduce fraud from 10,000 to under 1,000
+monthly flagged cases.
+Engineered large-scale ETL pipelines using Apache Airflow, Pandas, and PySpark to ingest and process 20GB+ of daily
+transactional and marketing data streams.
+Designed and implemented ad conversion optimization models using multi-touch attribution, Bayesian uplift
+modeling, and causal inference, driving 25% lift in conversion and 40% reduction in ad spend inefficiency.
+Deployed time-series forecasting models (ARIMA, Prophet, LSTM) to optimize logistics, reduce delivery delays from 5
+days to 2 days, and balance inventory across regional distribution hubs.
+Integrated data pipelines into production APIs using FastAPI and Docker for real-time fraud scoring and personalized
+ad recommendations.
+Built interactive analytics dashboards in Tableau and custom Flask-based web apps for real-time sales, marketing,
+and fraud metrics monitoring.
+Mar 2022 Mar 2023
+Retrieval-Augmented Generation (RAG), Google Cloud Platform (GCP), Vector Databases, FastAPI,
+Applied Machine Learning, Big Data Analytics, Statistics for Data Science, Algorithms and Computation,
+Human Computer Interaction, Python For Data Science & AI, Brain Computer Interaction,
+Natural Language Processing, Computer Vision, Artificial Intelligence, Data Analysis, Statistical Data Analysis,
+Programming, Object-Oriented Programming (OOP), JavaScript, Generative AI
+Education
+Publications
+University of Pennsylvania -
+Masters of Science in Engineering (MSE) Data Science
+Relevant Coursework:
+GPA: 4.0
+Aug 2024 May 2026
+Big Data analytics, Applied Machine Learning, Statistics for Data Science,
+Algorithms and Computation, Python for Data Science & AI, Natural Language Processing, Artificial Intelligence,
+Computer Vision, Brain-Computer Interfaces, Human Computer Interaction
+Guru Gobind Singh Indraprastha University -
+Bachelor's of Computer Applications Honours with specialization in AI and ML
+Artificial Intelligence and Machine Learning
+GPA: 4.0
+Jan 2021 Jan 2024
+Deep Learning-Based Diagnosis of Osteoarthritis in Knee X-ray Images using Convolutional Neural
+Networks for Sustainable Healthcare
+International Conference on Sustainable Development Post Conference Proceedings Communications in Computer and
+Information Science Springer Series
+AI for Secure and Resilient Cyber-Physical Systems
+Auerbach Publications
+Early-Stage Leukemia Detection Using Sophisticated Machine Learning Algorithms
+International Journal of Medical Engineering and Informatics (Accepted - Entering Publication Schedule)
+Harnessing Solar Power at Peak Efficiency through Prediction Modeling
+International Journal of Machine Learning for Sustainable Development
+Predictive Analytics for Sustainable Resource Management in Heritage Sites
+International Transactions in Artificial Intelligence
+Striving for Equity in Climate Change Mitigation: The Nexus of Transparent Planning, Cooperation,
+and Sustainable Growth
+International Journal of Sustainable Development in Field of IT
+Gamification in Management Education for Sustainability: Engaging Millennial and Gen Z Learners
+International Journal of Sustainable Development Through AI, ML and IoT
+Case-Based Learning for Sustainable Supply Chain Management: Lessons from Global Corporations
+International Journal of Sustainable Development Through AI, ML and IoT
+Revolutionizing Healthcare: An AI-Powered X-ray Analysis App for Fast and Accurate Disease
+Detection
+International Journal of Sustainable Development Through AI, ML and IoT
