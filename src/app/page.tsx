@@ -216,17 +216,18 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white overflow-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="grid grid-cols-3 items-center">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 py-3 sm:py-4">
+          <div className="grid grid-cols-3 items-center gap-2">
             {/* Name on Left */}
             <motion.button
               onClick={() => scrollToSection('home')}
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent hover:from-blue-300 hover:to-purple-400 transition-all justify-self-start"
+              className="text-sm sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent hover:from-blue-300 hover:to-purple-400 transition-all justify-self-start"
             >
-              ANANT AGGARWAL
+              <span className="hidden sm:inline">ANANT AGGARWAL</span>
+              <span className="sm:hidden">ANANT</span>
             </motion.button>
 
             {/* Beyond the Code in Center */}
@@ -235,53 +236,54 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              className={`px-6 py-2 rounded-full font-semibold transition-all justify-self-center ${
+              className={`px-2 sm:px-6 py-1 sm:py-2 rounded-full text-xs sm:text-base font-semibold transition-all justify-self-center ${
                 activeSection === 'gallery'
                   ? 'bg-gradient-to-r from-purple-500 to-pink-600 text-white shadow-lg'
                   : 'text-gray-300 hover:text-white border border-white/20 hover:border-white/40'
               }`}
             >
-              🎭 BEYOND THE CODE
+              <span className="hidden sm:inline">🎭 BEYOND THE CODE</span>
+              <span className="sm:hidden">🎭</span>
             </motion.button>
 
             {/* Tabs on Right */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="flex space-x-4 justify-self-end"
+              className="flex space-x-1 sm:space-x-4 justify-self-end"
             >
               <button
                 onClick={() => scrollToSection('experience')}
-                className={`flex items-center space-x-1 px-3 py-2 rounded-full transition-all ${
+                className={`flex items-center space-x-1 px-1 sm:px-3 py-1 sm:py-2 rounded-full transition-all text-xs sm:text-base ${
                   activeSection === 'experience'
                     ? 'bg-white/20 text-white'
                     : 'text-gray-400 hover:text-white hover:bg-white/10'
                 }`}
               >
                 <span>💼</span>
-                <span>Experience</span>
+                <span className="hidden sm:inline">Experience</span>
               </button>
               <button
                 onClick={() => scrollToSection('research')}
-                className={`flex items-center space-x-1 px-3 py-2 rounded-full transition-all ${
+                className={`flex items-center space-x-1 px-1 sm:px-3 py-1 sm:py-2 rounded-full transition-all text-xs sm:text-base ${
                   activeSection === 'research'
                     ? 'bg-white/20 text-white'
                     : 'text-gray-400 hover:text-white hover:bg-white/10'
                 }`}
               >
                 <span>🔬</span>
-                <span>Research</span>
+                <span className="hidden sm:inline">Research</span>
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className={`flex items-center space-x-1 px-3 py-2 rounded-full transition-all ${
+                className={`flex items-center space-x-1 px-1 sm:px-3 py-1 sm:py-2 rounded-full transition-all text-xs sm:text-base ${
                   activeSection === 'contact'
                     ? 'bg-white/20 text-white'
                     : 'text-gray-400 hover:text-white hover:bg-white/10'
                 }`}
               >
                 <span>📞</span>
-                <span>Contact</span>
+                <span className="hidden sm:inline">Contact</span>
               </button>
             </motion.div>
           </div>
@@ -289,7 +291,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative h-screen flex items-center justify-center px-6 pt-30">
+      <section id="home" className="relative h-screen flex items-center justify-center px-4 sm:px-6 pt-30">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
@@ -323,7 +325,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-7xl md:text-9xl font-black mb-6 leading-none"
+            className="text-5xl sm:text-7xl md:text-9xl font-black mb-4 sm:mb-6 leading-none"
           >
             <span className="bg-gradient-to-r from-white via-blue-200 to-purple-300 bg-clip-text text-transparent">
               AI
@@ -339,13 +341,17 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0"
           >
             Building practical machine learning systems that solve real problems.
-            <br />
-            <span className="text-blue-400 font-semibold">MS Data Science @ UPenn</span> • 
-            <span className="text-purple-400 font-semibold"> Published Researcher</span> • 
-            <span className="text-pink-400 font-semibold"> Full-Stack AI Developer</span>
+            <br className="hidden sm:block" />
+            <span className="block sm:inline mt-2 sm:mt-0">
+              <span className="text-blue-400 font-semibold">MS Data Science @ UPenn</span>
+              <span className="hidden sm:inline"> • </span>
+              <span className="block sm:inline text-purple-400 font-semibold">Published Researcher</span>
+              <span className="hidden sm:inline"> • </span>
+              <span className="block sm:inline text-pink-400 font-semibold">Full-Stack AI Developer</span>
+            </span>
           </motion.p>
 
           {/* Stats Grid */}
@@ -353,7 +359,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12"
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 mb-8 sm:mb-12 px-4 sm:px-0"
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -363,10 +369,10 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                   {stat.number}
                 </div>
-                <div className="text-sm text-gray-400 uppercase tracking-wider">
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">
                   {stat.label}
                 </div>
               </motion.div>
@@ -378,16 +384,16 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
-            className="mb-12"
+            className="mb-8 sm:mb-12"
           >
-            <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 max-w-4xl mx-auto px-4 sm:px-0">
               {technologies.map((tech, index) => (
                 <motion.span
                   key={tech}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.3, delay: 1.2 + index * 0.1 }}
-                  className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm backdrop-blur-sm hover:bg-white/10 transition-all cursor-default"
+                  className="px-3 sm:px-4 py-1 sm:py-2 bg-white/5 border border-white/10 rounded-full text-xs sm:text-sm backdrop-blur-sm hover:bg-white/10 transition-all cursor-default"
                 >
                   {tech}
                 </motion.span>
@@ -400,7 +406,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.5 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 sm:mb-0"
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -439,9 +445,9 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="text-center mb-16"
             >
-              <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                Beyond the Code
-              </h2>
+                      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent px-4 sm:px-0">
+          Beyond the Code
+        </h2>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 Life's too short to be serious all the time! Here's the real me in all my chaotic, adventurous, and slightly ridiculous glory. 
                 From epic fails to unexpected wins, these moments capture the human behind the algorithms.
@@ -458,7 +464,7 @@ export default function Home() {
               {/* 3D Carousel Container - Centered */}
               <div className="relative w-full flex flex-col items-center justify-center">
                 {/* Carousel Images - Fixed Height with Proper Spacing */}
-                <div className="relative w-full h-[450px] mb-20" style={{ perspective: '1200px' }}>
+                <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] mb-12 sm:mb-20" style={{ perspective: '1200px' }}>
                   <div className="absolute inset-0 flex items-center justify-center" style={{ transformStyle: 'preserve-3d' }}>
                   {!isClient || !isMounted ? (
                     // Server-side rendering fallback - simple loading state
@@ -675,10 +681,10 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="text-center mb-16"
             >
-              <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent px-4 sm:px-0">
                 Welcome
               </h2>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
                 I'm an AI Engineer currently pursuing my Master's in Data Science at the University of Pennsylvania. 
                 I specialize in building practical machine learning systems that solve real-world problems, from medical 
                 diagnostics to enterprise AI assistants. Ready to explore my journey?
@@ -686,15 +692,15 @@ export default function Home() {
             </motion.div>
 
             {/* Quick Navigation */}
-            <div className="grid md:grid-cols-3 gap-12 mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-12 mb-12 sm:mb-16 px-4 sm:px-0">
               <motion.button
                 onClick={() => scrollToSection('gallery')}
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="p-8 bg-gradient-to-br from-purple-500/20 to-pink-600/20 border border-purple-500/30 rounded-xl hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
               >
-                <div className="text-5xl mb-4">🎭</div>
-                <h3 className="text-xl font-semibold text-white mb-3">Beyond the Code</h3>
-                <p className="text-gray-300">Discover the real me through hilarious moments and epic adventures!</p>
+                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">🎭</div>
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3">Beyond the Code</h3>
+                <p className="text-sm sm:text-base text-gray-300">Discover the real me through hilarious moments and epic adventures!</p>
               </motion.button>
 
               <motion.button
@@ -702,9 +708,9 @@ export default function Home() {
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="p-8 bg-gradient-to-br from-blue-500/20 to-cyan-600/20 border border-blue-500/30 rounded-xl hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
               >
-                <div className="text-5xl mb-4">💼</div>
-                <h3 className="text-xl font-semibold text-white mb-3">Professional Journey</h3>
-                <p className="text-gray-300">Explore my experience building AI systems that make a real impact.</p>
+                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">💼</div>
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3">Professional Journey</h3>
+                <p className="text-sm sm:text-base text-gray-300">Explore my experience building AI systems that make a real impact.</p>
               </motion.button>
 
               <motion.button
@@ -712,9 +718,9 @@ export default function Home() {
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="p-8 bg-gradient-to-br from-green-500/20 to-blue-600/20 border border-green-500/30 rounded-xl hover:border-green-500/50 hover:shadow-lg hover:shadow-green-500/25 transition-all duration-300"
               >
-                <div className="text-5xl mb-4">🔬</div>
-                <h3 className="text-xl font-semibold text-white mb-3">Research Impact</h3>
-                <p className="text-gray-300">Check out my published work and contributions to the field.</p>
+                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">🔬</div>
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3">Research Impact</h3>
+                <p className="text-sm sm:text-base text-gray-300">Check out my published work and contributions to the field.</p>
               </motion.button>
             </div>
 
@@ -723,31 +729,31 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="grid md:grid-cols-3 gap-12"
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-12 px-4 sm:px-0"
             >
               <motion.div 
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="text-center p-8 bg-gradient-to-br from-blue-500/20 to-cyan-600/20 rounded-xl border border-blue-500/30 backdrop-blur-sm hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
               >
-                <div className="text-5xl mb-4">🧠</div>
-                <h3 className="text-xl font-semibold mb-2 text-blue-400">Analytical Thinker</h3>
-                <p className="text-gray-300">Published researcher in medical AI, achieving 94% diagnostic accuracy in imaging applications through rigorous analysis and innovation.</p>
+                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">🧠</div>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 text-blue-400">Analytical Thinker</h3>
+                <p className="text-sm sm:text-base text-gray-300">Published researcher in medical AI, achieving 94% diagnostic accuracy in imaging applications through rigorous analysis and innovation.</p>
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="text-center p-8 bg-gradient-to-br from-purple-500/20 to-pink-600/20 rounded-xl border border-purple-500/30 backdrop-blur-sm hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
               >
-                <div className="text-5xl mb-4">⚡</div>
-                <h3 className="text-xl font-semibold mb-2 text-purple-400">Collaborative Leader</h3>
-                <p className="text-gray-300">Expert in leading cross-functional teams, with enterprise-scale deployments and proven ability to bridge technical and business domains.</p>
+                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">⚡</div>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 text-purple-400">Collaborative Leader</h3>
+                <p className="text-sm sm:text-base text-gray-300">Expert in leading cross-functional teams, with enterprise-scale deployments and proven ability to bridge technical and business domains.</p>
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="text-center p-8 bg-gradient-to-br from-pink-500/20 to-red-600/20 rounded-xl border border-pink-500/30 backdrop-blur-sm hover:border-pink-500/50 hover:shadow-lg hover:shadow-pink-500/25 transition-all duration-300"
               >
-                <div className="text-5xl mb-4">🚀</div>
-                <h3 className="text-xl font-semibold mb-2 text-pink-400">Innovation Catalyst</h3>
-                <p className="text-gray-300">Building the next generation of AI-powered tools that transform how people work, always pushing boundaries and exploring new possibilities.</p>
+                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">🚀</div>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 text-pink-400">Innovation Catalyst</h3>
+                <p className="text-sm sm:text-base text-gray-300">Building the next generation of AI-powered tools that transform how people work, always pushing boundaries and exploring new possibilities.</p>
               </motion.div>
             </motion.div>
           </div>
@@ -759,7 +765,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="min-h-screen py-24 px-6 bg-gradient-to-br from-gray-900 to-black pt-28"
+        className="min-h-screen py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-br from-gray-900 to-black pt-20 sm:pt-28"
       >
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -840,7 +846,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="min-h-screen py-24 px-6 bg-gradient-to-br from-black via-gray-900 to-gray-800 pt-28"
+        className="min-h-screen py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-br from-black via-gray-900 to-gray-800 pt-20 sm:pt-28"
       >
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -853,7 +859,7 @@ export default function Home() {
             </div>
 
             {/* Publications Grid */}
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16 px-4 sm:px-0">
               {publications.map((pub, index) => (
                 <motion.div
                   key={pub.title}
@@ -911,7 +917,7 @@ export default function Home() {
             {/* Research Areas */}
             <div className="text-center">
               <h3 className="text-3xl font-bold text-white mb-8">Research Focus Areas</h3>
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-0">
                 <div className="p-6 bg-gradient-to-br from-blue-500/10 to-cyan-600/10 border border-blue-500/20 rounded-xl">
                   <div className="text-4xl mb-4">🧠</div>
                   <h4 className="text-xl font-semibold text-white mb-3">Medical AI</h4>
@@ -950,7 +956,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 px-4 sm:px-0">
               {/* Contact Information */}
               <div className="space-y-8">
                 <div>
